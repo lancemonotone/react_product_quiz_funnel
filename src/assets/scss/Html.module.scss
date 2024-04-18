@@ -1,0 +1,19 @@
+.html {
+    max-width: 600px;
+    margin-inline: auto;
+    align-self: center;
+
+    p {
+        font-family: KoHo, sans-serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 66px */
+        text-transform: capitalize;
+        text-align: start;
+
+        & strong {
+            font-weight: 700;
+        }
+    }
+}

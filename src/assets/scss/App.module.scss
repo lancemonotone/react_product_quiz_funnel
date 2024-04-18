@@ -1,0 +1,184 @@
+//@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=KoHo:wght@400;700&display=swap');
+//
+//body {
+//    font-family: 'KoHo', sans-serif;
+//    place-items: normal;
+//    justify-content: center;
+//    text-align: center;
+//    padding: 20px;
+//    color: #fff;
+//}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #4295e4 15.56%, #7a67f1 92.26%);
+    min-height: 560px;
+    padding-block: 80px;
+    background-size: 200% 200%;
+    animation: gradient 60s ease infinite;
+    text-align: center;
+}
+
+.closeButton {
+    font-family: 'KoHo', sans-serif;
+    position: absolute;
+    border: none;
+    display: flex;
+    gap: 8px;
+    top: 35px;
+    right: 50px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    &:after {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.07547 2.22592V0.828613H0V13.1715H4.07547V11.7742H1.3973L1.39731 2.22592L4.07547 2.22592ZM12.0296 7.47548L9.1755 10.3304L8.22428 9.37897L9.92977 7.67264H2.80791V6.32722L9.92977 6.32722L8.22428 4.62156L9.1755 3.66949L12.0296 6.52426C12.2924 6.7864 12.2924 7.21268 12.0296 7.47548Z" fill="white"/></svg>');
+        opacity: 0.5;
+    }
+    &:hover:after {
+        opacity: 1;
+    }
+}
+
+.app > * {
+    width: 90%;
+    max-width: 877px;
+    margin-inline: auto;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: KoHo, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 66px */
+    text-transform: capitalize;
+}
+
+h4 {
+    color: #ffffff;
+    align-self: stretch;
+    font-family: 'KoHo', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; /* 36.8px */
+    margin-block: 0 30px;
+}
+
+h6 {
+    color: #ffffff;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+    text-transform: uppercase;
+    margin-block: 0 30px;
+}
+
+p {
+    color: #ffffff;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-block: 0 30px;
+}
+
+a {
+    user-select: none;
+    text-decoration: none !important;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'KoHo', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    padding: 0 0 3px 0;
+
+    &:hover {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+button {
+    user-select: none;
+    // no border or background. just an underlined text link
+    // pointer should be a hand
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'KoHo', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    padding: 0 0 3px 0;
+
+    &:hover {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+fieldset {
+    color: #ffffff;
+    margin-block-end: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    legend {
+        padding-inline: 10px;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}

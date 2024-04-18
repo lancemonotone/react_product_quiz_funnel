@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  cursor: default;
+  margin-block-end: 40px;
+}
+
+.pageNumber {
+  color: rgba(255, 255, 255, 0.5);
+
+  text-align: center;
+  /* text-btn */
+  font-family: KoHo, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.active {
+  color: #ffffff; /* Adjust color based on your theme */
+}

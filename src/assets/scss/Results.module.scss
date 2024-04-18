@@ -1,0 +1,18 @@
+.draggablePopup {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #000000ee; /* Adjust color based on your theme */
+    border: 2px solid #6c7ae0; /* Adjust color based on your theme */
+    border-radius: 10px;
+    padding: 20px;
+    cursor: move; /* Changes the cursor to indicate the element is movable */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Adds a shadow to give a floating effect */
+    z-index: 1000; /* Ensures the popup appears above other elements */
+}
+.draggablePopupTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

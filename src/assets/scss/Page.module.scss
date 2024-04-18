@@ -1,0 +1,50 @@
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0%, 70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeSlideInRight {
+    animation: slideInFromRight 0.3s ease-out forwards, fadeIn 0.3s ease-out forwards;
+}
+
+.fadeSlideInLeft {
+    animation: slideInFromLeft 0.3s ease-out forwards, fadeIn 0.3s ease-out forwards;
+}
+
+.content {
+    min-height: 455px;
+    display: grid;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .hidden {
+        visibility: hidden;
+    }
+}
