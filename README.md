@@ -4,6 +4,11 @@ The quiz is designed to lead a user through a series of questions designed to na
 
 For each answer, there is a specific message on the next page, then another series of questions.
 
+<p>
+  <img style="display: block" src="./screenshot.png" width="500" />
+    <small><em>Screenshot</em></small>
+</p>
+
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
