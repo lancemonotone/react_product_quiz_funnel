@@ -4,10 +4,7 @@ The quiz is designed to lead a user through a series of questions designed to na
 
 For each answer, there is a specific message on the next page, then another series of questions.
 
-<p>
-  <img src="./screenshot.png" width="500" />
-  <small style="display: block"><em>Screenshot</em></small>
-</p>
+![Quiz screenshot](./screenshot.png "Screenshot of the quiz")
 
 ## React + TypeScript + Vite
 
