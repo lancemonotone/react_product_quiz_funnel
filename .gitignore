@@ -10,7 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-_liquid-templates
+liquid_templates
 *.local
 
 # Editor directories and files
